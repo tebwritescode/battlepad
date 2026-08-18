@@ -1,0 +1,31 @@
+return {
+  summary = "Controller-first battle UI: direct moves, radial sticks, action queueing, modern screens.",
+  author = "Teb",
+  tags = { "ui", "battle", "controller", "quality-of-life" },
+  differences = {
+    changed = {
+      "the battle command menu and move list are one modern command deck",
+      "the in-battle bag and party screens wear a modern skin over the vanilla logic",
+      "the battle message box is redrawn in the same style",
+      "SELECT opens the party screen in battle; START opens the pack",
+    },
+    added = {
+      "d-pad directions fire the four moves directly",
+      "face buttons map to FIGHT / RUN / POKEMON / PACK with pad-matched glyphs",
+      "left stick radial move select, right stick radial command select",
+      "the next action queues while the foe is still acting, with cooldown spinners",
+      "four OPTIONS rows: BATTLEPAD, QUICK MOVES, QUEUE NEXT, PAD ICONS",
+    },
+    known = {
+      "safari, old-man demo and Mimic menus keep the classic UI on purpose",
+      "sub-dialogs opened from the bag or party (stat boxes, quantities, summary) keep the classic look",
+      "the classic SELECT move-swap is superseded while BattlePad is on",
+      "declared incompatible with USEFUL_BATTLE_CAM: both mods want the sticks in battle",
+    },
+  },
+  credits = {
+    { who = "Teb", for_ = "design and implementation" },
+    { who = "Useful Battle Cam", for_ = "the wrap-and-forward input capture pattern this mod follows" },
+  },
+  compat = { engine = ">=1.0.0 <2.0.0", modApi = 2 },
+}

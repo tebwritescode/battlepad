@@ -1,0 +1,7 @@
+*.bak
+*.modpkg
+.dist/
+.github_disabled/
+.iso/
+.shots*/
+.shots/
