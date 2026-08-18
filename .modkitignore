@@ -1,0 +1,16 @@
+# Files that stay in the repo and out of the distributed package.
+# Exact relative paths, one per line -- modkit matches literally, no globs.
+
+# The suites: the headless unit suite requires engine modules (a private
+# require against the shipped archive), and the end-to-end driver is run
+# through POKEPORT_DRIVER against a dev checkout.  They are the reason to
+# trust the package; they are not something a player installs.
+tests/battle_pad_test.lua
+tests/driver.lua
+tests/driver_gold.lua
+tests/isolate.lua
+
+.gitignore
+docs/screens/quick-moves.png
+docs/screens/command-deck.png
+docs/screens/queue.png
